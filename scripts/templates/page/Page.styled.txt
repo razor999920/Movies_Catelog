@@ -1,0 +1,4 @@
+import styled from 'styled-components';
+import { StyledGlobalPage } from '@/components/_styled/GlobalPage.styled';
+
+export const {{pascal}} = styled(StyledGlobalPage)``;

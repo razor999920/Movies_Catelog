@@ -1,0 +1,16 @@
+import React from 'react';
+import './{{pascal}}.scss';
+
+const defaultProps = {};
+
+const {{pascal}} = () => {
+  return (
+    <div className="{{pascal}}">
+      Component: {{pascal}}
+    </div>
+  );
+};
+
+{{pascal}}.defaultProps = defaultProps;
+
+export default {{pascal}};

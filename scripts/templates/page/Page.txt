@@ -1,0 +1,36 @@
+import React from 'react';
+import * as S from './{{lower}}.styled';
+import { useTranslation, UserConfig } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { GetStaticProps } from 'next'
+
+const defaultProps = {};
+
+type StaticPropsReturn = {
+  _nextI18Next: {
+    initialI18nStore: any
+    initialLocale: string
+    userConfig: UserConfig
+  }
+}
+export const getStaticProps: GetStaticProps<StaticPropsReturn> = async (
+  context
+) => {
+  const locale = context.locale
+  return {
+    props: { ...(await serverSideTranslations(locale, ['common'])) },
+  }
+}
+
+const {{pascal}} : React.FC<any> = () => {
+  const { t } = useTranslation()
+  return (
+    <S.{{pascal}}>
+      {{pascal}}
+    </S.{{pascal}}>
+  );
+};
+
+{{pascal}}.defaultProps = defaultProps;
+
+export default {{pascal}};
