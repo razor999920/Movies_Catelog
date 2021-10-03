@@ -1,0 +1,32 @@
+.modal {
+  background-color: #2f0c77;
+  position: fixed;
+  top: 20vh;
+  left: 30%;
+  z-index: 100;
+  border-radius: 10px;
+  padding-top: 15px;
+  width: 45%;
+  height: 65%;
+  overflow: scroll;
+  
+}
+
+.apply_button {
+  background-color: #e800b2;
+  border-color: transparent;
+  border-radius: 10px;
+  width: 85%;
+  display: block;
+  margin: 20px auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}

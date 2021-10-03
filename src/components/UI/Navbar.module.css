@@ -1,26 +1,23 @@
 .nav {
-    position: relative;
-    margin-bottom: 44%;
-    /* 47%; */
-    width: 100%;
-    left: 12%;
-  }
-  
+  position: relative;
+  margin-bottom: 700px;
+  width: 100%;
+  left: 12%;
+}
+
 .filter_btn {
-  
   background-color: #e800b2;
   border-color: transparent;
   border-radius: 10px;
   margin: 0 auto;
-  
 }
 
 .clear_btn {
   position: fixed;
   padding: 0;
-  left: 17%;
+  left: 25%;
   background-color: transparent;
-  border-color:transparent;
+  border-color: transparent;
 }
 
 .icon {
@@ -34,8 +31,5 @@
   border-radius: 10px;
   position: relative;
   margin: 0 auto;
-  /* margin-bottom: 620px; */
   bottom: 300px;
-  /* left: 60px; */
-  
 }
